@@ -14,10 +14,10 @@ export const Container = styled.div`
     border-radius: 10px;
 
     background: ${({theme}) => theme.COLORS.BACKGROUND_700};
-    color: ${({ theme }) => theme.COLORS.GRAY_300};
+    color: ${({ theme }) => theme.COLORS.WHITE};
     
     > svg {
-        color: ${({ theme }) => theme.COLORS.GRAY_300};
+        color: ${({ theme }) => theme.COLORS.GRAY_900};
     }
 
     

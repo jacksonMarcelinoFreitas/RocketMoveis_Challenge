@@ -38,8 +38,12 @@ export const Form = styled.form`
             font-size: 24px;
             color: ${({theme}) => theme.COLORS.WHITE};
         }
-
     }
+
+    > button:nth-child(even){
+        margin-bottom: 42px;
+    }
+
 `;
 
 export const Background = styled.div`
