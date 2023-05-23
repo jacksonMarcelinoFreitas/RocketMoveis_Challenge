@@ -1,39 +1,54 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 64px;
 
-    > h2 {
-        color: ${({ theme }) => theme.COLORS.PINK};
+    height: 116px;
+    width: 100%;
+    padding: 0 64px;
+    border-bottom: 1px solid ${({theme}) => theme.COLORS.GRAY_900 };
+
+    background: ${({theme}) => theme.COLORS.BACKGROUND_900};
+
+    > h1{
         font-size: 24px;
-        font-weight: 700;
+        font-weight: bold;
+        color: ${({theme}) => theme.COLORS.PINK};
+    }
+`;
+
+export const Profile = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+
+
+    > img{
+        width: 64px;
+        border-radius: 50%;
+
+        border: 1px solid ${({theme}) => theme.COLORS.GRAY_900};
     }
 
-    > .profile-small {
-        > div {
-            > p{
-                color: ${({ theme }) => theme.COLORS.WHITE};
-                font-size: 14px;
-                font-weight: 700;
-            }
-            a{
-                color: ${({ theme }) => theme.COLORS.GRAY_700};
-                font-size: 14px;
-                font-weight: 400;
-            }
+    > div{
+        text-align: end;
+        width: 120px;
 
-        }   
-        > .photo {
-            background-image: url('https://github.com/jacksonMarcelinoFreitas.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        color: ${({theme})=> theme.COLORS.WHITE};
+        font-size: 14px;
+        font-weight: bold;
 
-            border-radius: 50%;
-            border: 1 px solid ${({theme}) => theme.COLORS.GRAY_900};
-        }     
+        > a {
+            display: block;
+            font-weight: 400;
+            color: ${({theme})=> theme.COLORS.GRAY_700};
+        }
     }
 
 `;
+
+
