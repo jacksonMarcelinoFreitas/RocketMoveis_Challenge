@@ -5,17 +5,15 @@ export const Container = styled.div`
     grid-area: 
     "header header"
     "button button"
-    
-
     ;
-`;
 
-export const Content = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-`
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+`;
 
 export const Form  = styled.div`
     display: flex;

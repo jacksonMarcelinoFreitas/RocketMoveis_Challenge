@@ -1,9 +1,12 @@
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
 import { ButtonText } from '../../components/ButtonText';
-import { Tag } from '../../components/Tag';
-import { FiArrowLeft } from 'react-icons/fi';
-import { Container, Form, Tags } from './style';
+import { Button } from '../../components/Button';
+import { Textarea } from '../../components/Textarea';
+import { Section } from '../../components/Section';
+import { NoteItem } from '../../components/NoteItem';
+import { FiArrowLeft} from 'react-icons/fi';
+import { Container, Form} from './style';
 
 export function CreateMovie(){
     return(
@@ -11,24 +14,29 @@ export function CreateMovie(){
             <Header />
 
             <main>
-                <Form>
-                    <div>
-                        <ButtonText icon={FiArrowLeft}/>
-                        <h1>Novo Filme</h1>
-                    </div>
+                <div>
+                    <ButtonText icon={FiArrowLeft} title="voltar"/>
+                    <h1>Novo Filme</h1>
+                </div>
                 
-                    <div>
-                        <Input />
-                        <Input />
-                    </div>
+                <Form>
+                    <Input placeholder="Título"/>
+                    <Input placeholder="Sua nota (de 0 a 5)"/>
+                    < Textarea 
+                        placeholder="Observações"
+                        // value={'Texte de valor aqui!'}
+                    />
 
-                    <Input />
+                    <Section title="Marcadores">
+                        <div class="box-tags">
+                            <NoteItem value="React" />
+                            <NoteItem isNew placeholder="Novo marcador" />
+                        </div>
+                    </Section>
 
-                    <h2>Marcadores</h2>
-
-                    <Tags>
-                        <Input />
-                    </Tags>
+                    <Button title="Exluir filme" />
+                    <Button title="Salvar alterações" />
+                    
                 </Form>
             </main>
         </Container>
