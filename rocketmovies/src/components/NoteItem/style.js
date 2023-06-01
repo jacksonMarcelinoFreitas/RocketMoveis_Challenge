@@ -3,27 +3,32 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     align-items: center;
+    justify-content: start;
+
+    padding-right: 16px;
+
 
     //Estilização condicional, conforme propriedade passada
     background-color: ${({ theme, isNew }) => isNew ? "transparent" : theme.COLORS.BACKGROUND_900};
 
-    border: ${({ theme, isNew }) => isNew ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
+    border: ${({ theme, isNew }) => isNew ? `2px dashed ${theme.COLORS.GRAY_900 }` : "none"};
 
-    margin-bottom: 8px;
     border-radius: 10px;
-    padding-right: 16px;
+    border-spacing: 10px;
 
     > button {
+        display: flex;
+        align-items: center;
         border: none;
         background: none;
     }
 
     .button-delete{
-        color: ${({ theme }) => theme.COLORS.RED};
+        color: ${({ theme }) => theme.COLORS.PINK};
     }
     
     .button-add{
-        color: ${({ theme }) => theme.COLORS.ORANGE};
+        color: ${({ theme }) => theme.COLORS.PINK};
     }
 
     

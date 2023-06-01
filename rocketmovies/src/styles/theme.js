@@ -4,8 +4,7 @@ export default {
         PINK: "#FF859B",
         PINK_50: "rgba(255, 133, 155, 0.05)", 
         WHITE: "#F4EDE8",
-        BLACK: "#312E38",
-
+        BLACK: "#000",
 
         BACKGROUND_900: "#1C1B1E",
         BACKGROUND_700: "#262529",

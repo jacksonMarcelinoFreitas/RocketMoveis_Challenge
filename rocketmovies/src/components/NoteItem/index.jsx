@@ -10,7 +10,7 @@ export function NoteItem({isNew, value, onClick, ...rest}){
                 readOnly={!isNew}
                 {...rest}
             />
-
+            
             <button 
                 type="button" 
                 onClick={onClick}

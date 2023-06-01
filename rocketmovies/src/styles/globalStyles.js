@@ -14,6 +14,8 @@ export default createGlobalStyle`
         font-family: 'Roboto Slab', serif;
         width: 100vw;
         height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
     };
 
     body, input, button, textarea{
