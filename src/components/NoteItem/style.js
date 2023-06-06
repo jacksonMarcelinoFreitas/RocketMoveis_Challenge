@@ -5,6 +5,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: start;
 
+    width: ${({ theme, isNew }) => isNew ? `180px` : `130px`};
+
     padding-right: 16px;
 
 
@@ -26,12 +28,12 @@ export const Container = styled.div`
     .button-delete{
         color: ${({ theme }) => theme.COLORS.PINK};
     }
-    
+
     .button-add{
         color: ${({ theme }) => theme.COLORS.PINK};
     }
 
-    
+
 
     > input {
         height: 56px;
@@ -51,4 +53,6 @@ export const Container = styled.div`
 
     }
 
-`
+
+
+`;

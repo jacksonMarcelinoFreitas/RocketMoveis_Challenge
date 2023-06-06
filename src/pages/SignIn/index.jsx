@@ -1,7 +1,7 @@
-import { Container, Background, Form } from './style';
-import { Input } from '../../components/Input';
-import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText';
+import { Container, Background, Form } from './style';
+import { Button } from '../../components/Button';
+import { Input } from '../../components/Input';
 import { FiMail, FiKey } from "react-icons/fi";
 
 export function SignIn(){
@@ -13,20 +13,22 @@ export function SignIn(){
                     <p>Aplicação para acompanhar tudo que assistir.</p>
                     <h2>Faça seu login</h2>
                 </div>
-                <Input 
+                <Input
                     placeholder = 'E-mail'
                     type = 'email'
                     icon = {FiMail}
+                    id="email"
                 />
-                <Input 
-                    placeholder = 'Senha'  
+                <Input
+                    placeholder = 'Senha'
                     type = 'password'
                     icon = {FiKey}
+                    id="senha"
                 />
-                <Button 
-                    title = 'Entrar' 
+                <Button
+                    title = 'Entrar'
                 />
-                <ButtonText 
+                <ButtonText
                     title = 'Criar conta'
                 />
             </Form>

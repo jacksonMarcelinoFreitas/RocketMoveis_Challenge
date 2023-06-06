@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-rows: 114px 500px auto;
+  grid-template-rows: 144px auto;
   grid-template-areas:
   "header"
   "avatar"
@@ -11,17 +11,19 @@ export const Container = styled.div`
   > main{
     height: 100%;
     width: 100%;
-    grid-area: "main";
+    grid-area: main;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+    margin-top: -50px;
+
     padding: 0 144px;
   }
 
   > header{
-    grid-area: "header";
+    grid-area: header;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -36,7 +38,7 @@ export const Container = styled.div`
 `;
 
 export const Avatar = styled.div`
-  grid-area: "avatar";
+  grid-area: avatar;
   position: relative;
   width: 186px;
   height: 186px;

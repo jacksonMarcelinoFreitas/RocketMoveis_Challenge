@@ -1,7 +1,7 @@
-import { Header } from '../../components/Header';
 import { Container, Content, AddFilme } from './style';
-import { Note } from '../../components/Note';
 import { Button } from '../../components/Button';
+import { Header } from '../../components/Header';
+import { Note } from '../../components/Note';
 import { FiPlus } from 'react-icons/fi';
 
 export function Home(){

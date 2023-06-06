@@ -27,12 +27,12 @@ export function Profile(){
                 </Avatar>
                 <Form>
                     <div className="box-input">
-                        <Input type="text" icon={FiUser}  placeholder="Nome"/>
-                        <Input type="e-mail" icon={FiMail}  placeholder="jacksonzitap.mc@gmail.com"/>
+                        <Input id="nome" type="text" icon={FiUser}  placeholder="Nome"/>
+                        <Input id="email" type="e-mail" icon={FiMail}  placeholder="jacksonzitap.mc@gmail.com"/>
                     </div>
                     <div className="box-input">
-                        <Input type="password" icon={FiLock}  placeholder="Senha atual"/>
-                        <Input type="password" icon={FiLock}  placeholder="Nova senha"/>
+                        <Input id="senha-atual" type="password" icon={FiLock}  placeholder="Senha atual"/>
+                        <Input id="senha-nova" type="password" icon={FiLock}  placeholder="Nova senha"/>
                         <Button title="Salvar"/>
                     </div>
                 </Form>

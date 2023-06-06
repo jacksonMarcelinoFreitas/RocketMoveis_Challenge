@@ -5,11 +5,12 @@ export const Container = styled.div`
     height: 100vh;
 
     display: grid;
-    grid-template-rows: 116px 132px auto ;
-    grid-template-areas: 
+    grid-template-rows: 116px 132px auto;
+    grid-template-areas:
     "header"
     "addfilme"
     "content ";
+    grid-area: header;
 
     background: ${({theme})=> theme.COLORS.BACKGROUND_900};
 `
@@ -34,7 +35,7 @@ export const AddFilme = styled.div`
         flex:1;
     }
 
-    
+
 `;
 
 export const Content = styled.div`
@@ -46,9 +47,9 @@ export const Content = styled.div`
 
     &::-webkit-scrollbar-track {
         background-color: transparent;
-        
+
     }
-    
+
     &::-webkit-scrollbar {
         width: 8px;
     }

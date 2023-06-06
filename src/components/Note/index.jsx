@@ -52,7 +52,7 @@ export function Note({data, ...rest}){
                 </div>
             )}
 
-            <div class="box-desc-tag">
+            <div className="box-desc-tag">
                 <p>{data.description}</p>
                 {
                     data.tags &&

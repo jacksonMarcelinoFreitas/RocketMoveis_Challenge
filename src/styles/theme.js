@@ -2,7 +2,8 @@ export default {
     //tema squa serão utilizados em toda a aplciaçao
     COLORS: {
         PINK: "#FF859B",
-        PINK_50: "rgba(255, 133, 155, 0.05)", 
+        PINK_50: "rgba(255, 133, 155, 0.05)",
+        PINK_TAG: "#312E38",
         WHITE: "#F4EDE8",
         BLACK: "#000",
 

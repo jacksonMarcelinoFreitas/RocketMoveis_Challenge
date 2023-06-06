@@ -13,6 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
+    grid-area: form;
     padding: 0 148px;
     display: flex;
     align-items: center;
@@ -47,6 +48,7 @@ export const Form = styled.form`
 `;
 
 export const Background = styled.div`
+    grid-area: image;
     background: url(${backgroundImg}) no-repeat center center;
     background-size: cover;
 `;

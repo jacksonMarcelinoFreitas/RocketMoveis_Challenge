@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: grid;
-    grid-template-rows: 116px auto;
-
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "main";
+    grid-template-rows: 116px auto;
 
     header{
-        grid-area: "header" !important;
+        grid-area: header;
     }
 
     .container{
@@ -22,9 +21,9 @@ export const Container = styled.div`
 
         &::-webkit-scrollbar-track {
         background-color: transparent;
-        
+
         }
-        
+
         &::-webkit-scrollbar {
             width: 8px;
         }
@@ -42,11 +41,11 @@ export const Container = styled.div`
         justify-content: center;
         flex-direction: column;
 
-        grid-area: "main";
+        grid-area: main;
 
         padding: 40px 64px;
 
-        > .header-main{
+        .header-main{
             margin-bottom: 40px;
             h1{
                 margin-top: 24px;
@@ -106,4 +105,3 @@ export const Form  = styled.div`
     gap: 40px;
 
 `
-

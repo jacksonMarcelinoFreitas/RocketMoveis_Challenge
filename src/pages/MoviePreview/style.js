@@ -2,24 +2,27 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-areas: 116px auto;
-  grid-area:
-  "header"
-  "section";
 
-  > header {
-    grid-area: "header";
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-areas:
+  "header"
+  "sessao";
+
+  grid-template-rows: 116px auto;
+
+
+  header {
+    grid-area: header;
+    padding: 0 122px;
   }
 
   button {
     margin-bottom: 24px;
   }
 
-  > section {
-    grid-area: "section";
-    padding: 0 122px;
+  section {
+    grid-area: sessao;
+    padding: 24px 122px;
   }
 
   .container-info{
@@ -97,14 +100,7 @@ export const Container = styled.div`
         p{
             order: 2;
         }
-
-
-
     }
   }
-
-
-
-
 
 `

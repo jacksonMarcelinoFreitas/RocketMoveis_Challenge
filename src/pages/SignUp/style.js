@@ -6,13 +6,14 @@ export const Container = styled.div`
     height: 100vh;
 
     display: grid;
-    grid-template-areas: "form image";
-    grid-template-columns: 637px auto;
+    grid-template-areas: "image form";
+    grid-template-columns: auto 637px;
 
     background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 `;
 
 export const Form = styled.form`
+    grid-area: form;
     padding: 0 148px;
     display: flex;
     align-items: center;
@@ -47,6 +48,7 @@ export const Form = styled.form`
 `;
 
 export const Background = styled.div`
+    grid-area: image;
     background: url(${backgroundImg}) no-repeat center center;
     background-size: cover;
 `;

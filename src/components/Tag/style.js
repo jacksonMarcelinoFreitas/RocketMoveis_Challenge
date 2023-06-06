@@ -7,7 +7,7 @@ export const Container = styled.span`
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     color: ${({theme}) => theme.COLORS.WHITE};
-    background: ${({theme}) => theme.COLORS.PINK_50};
+    background: ${({theme}) => theme.COLORS.PINK_TAG};
 
     border-radius: 10px;
 
