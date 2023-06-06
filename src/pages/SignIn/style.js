@@ -41,7 +41,7 @@ export const Form = styled.form`
         }
     }
 
-    > button:nth-child(even){
+    > a:nth-child(even){
         margin-bottom: 42px;
     }
 

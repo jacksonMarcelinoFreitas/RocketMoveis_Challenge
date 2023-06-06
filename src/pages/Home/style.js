@@ -29,12 +29,12 @@ export const AddFilme = styled.div`
         flex:4;
     }
 
-    > Button{
+    > a{
+        width: 30px;
         margin: 0;
         padding: 0;
         flex:1;
     }
-
 
 `;
 

@@ -15,7 +15,7 @@ export function CreateMovie(){
             <main>
                 <div className="container">
                     <div className="header-main">
-                        <ButtonText icon={FiArrowLeft} title="voltar"/>
+                        <ButtonText to="/" icon={FiArrowLeft} title="voltar"/>
                         <h1>Novo Filme</h1>
                     </div>
                     <Form className='Form'>

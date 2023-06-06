@@ -46,7 +46,14 @@ export const Container = styled.div`
         padding: 40px 64px;
 
         .header-main{
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+            }
+
             margin-bottom: 40px;
+
             h1{
                 margin-top: 24px;
             }
