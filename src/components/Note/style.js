@@ -26,23 +26,34 @@ export const Container = styled.div`
         margin-bottom: 8px;
     }
 
-    > p{
-        font-size: 16px;
-        font-weight: 400;
 
-        color: ${({theme}) => theme.COLORS.GRAY_700};
-        text-align: justify;
-        margin-bottom: 16px;
-    }
 
-    > footer{
-        width: 100%;
 
+
+    .box-desc-tag{
         display: flex;
-        align-items: center;
-        justify-content: left;
-        gap: 8px;
+        flex-direction: column;
+
+        > p{
+            order: 1;
+            font-size: 16px;
+            font-weight: 400;
+
+            color: ${({theme}) => theme.COLORS.GRAY_700};
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        > footer{
+            order: 2;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 8px;
+        }
+
     }
 
 `;
-

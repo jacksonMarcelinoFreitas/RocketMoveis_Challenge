@@ -5,6 +5,7 @@ import { Button } from '../../components/Button';
 import { FiPlus } from 'react-icons/fi';
 
 export function Home(){
+    let screen = 1;
     return(
         <Container>
             <Header />
@@ -17,8 +18,9 @@ export function Home(){
             <Content>
                     <Note data={
                             {
+                                screen: {screen},
                                 title: 'Interestellar',
-                                stars: 0,
+                                stars: 2,
                                 description:
                                 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper, acredita que seu quarto está assombrado por um fantasma que tenta se comunicar com ela. Pai e filha descobrem que o "fantasma" é uma inteligência desconhecida que está enviando mensagens codificadas através de ',
                                 tags:
@@ -33,7 +35,7 @@ export function Home(){
                     <Note data={
                             {
                                 title: 'Iron Men',
-                                stars: 0,
+                                stars: 3,
                                 description:
                                 'Pragas nas colheitas fizeram a civilização humana regredir para uma sociedade agrária em futuro de data desconhecida. Cooper, ex-piloto da NASA, tem uma fazenda com sua família. Murphy, a filha de dez anos de Cooper, acredita que seu quarto está assombrado por um fantasma que tenta se comunicar com ela. Pai e filha descobrem que o "fantasma" é uma inteligência desconhecida que está enviando mensagens codificadas através de ',
                                 tags:

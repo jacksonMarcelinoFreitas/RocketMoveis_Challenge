@@ -2,41 +2,67 @@ import { Container } from './style';
 import { Tag } from '../Tag';
 import { Star } from '../../components/Star';
 import { IoMdStarOutline, IoMdStar } from 'react-icons/io';
+import { TbClockHour3 } from 'react-icons/tb';
 
 
 
 export function Note({data, ...rest}){
     let {stars} = data;
-    let {emptyStar} = 0;
+    let {screen} = data;
+    let emptyStar = 0;
 
     if(stars !== 5){
         emptyStar = 5 - stars;
     }
-    
+
     return(
         <Container {...rest}>
-            <h1>{data.title}</h1>
-
-            <div>
-                {Array.from({ length: stars }).map((_, index) => (
-                    <Star key={index} icon={IoMdStar} />
-                ))}
-
-                {Array.from({ length: emptyStar }).map((_, index) => (
-                    <Star key={index} icon={IoMdStarOutline} />
-                ))}  
+            <div className='box-title-stars'>
+                <h1>{data.title}</h1>
+                <div>
+                    {Array.from({ length: stars }).map((_, index) => (
+                        <Star className="star" key={index} icon={IoMdStar} />
+                    ))}
+                    {Array.from({ length: emptyStar }).map((_, index) => (
+                        <Star className="star" key={index} icon={IoMdStarOutline} />
+                    ))}
+                </div>
             </div>
 
-            <p>{data.description}</p>
-
+            {/*renderização condicional por tela*/}
             {
-                data.tags &&
-                <footer>
-                    {
-                        data.tags.map(tag => <Tag key={tag.id} title={tag.name}/>)
-                    }
-                </footer>
-            } 
+                screen === 2 && (
+                <div className='box-user-time'>
+
+                    <div className='box-user'>
+                        <div className='avatar'>
+                            <img
+                                src="https://github.com/jacksonMarcelinoFreitas.png"
+                                alt="Foto do Usuário">
+                            </img>
+                        </div>
+                        <p>Por {data.user}</p>
+                    </div>
+
+                    <div className='box-time'>
+                        { <TbClockHour3 className='icon-time' /> }
+                        <p>{data.time}</p>
+                    </div>
+
+                </div>
+            )}
+
+            <div class="box-desc-tag">
+                <p>{data.description}</p>
+                {
+                    data.tags &&
+                    <footer>
+                        {
+                            data.tags.map(tag => <Tag key={tag.id} title={tag.name}/>)
+                        }
+                    </footer>
+                }
+            </div>
 
         </Container>
     )
@@ -60,5 +86,3 @@ export function Note({data, ...rest}){
 
 // isActive: Um valor booleano para indicar o estado ativo do componente.
 // isVisible: Um valor booleano para indicar se o componente deve ser exibido ou oculto.
-
-
